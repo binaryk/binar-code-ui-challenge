@@ -30,7 +30,6 @@ export default {
 };
 </script>
 
-
 <style scoped>
 
 .notification {
@@ -43,15 +42,12 @@ export default {
     background-color: white;
     border-radius: 15px;
     font-weight: bold;
-
 }
 
 .header {
     display: flex;
     flex-direction: row;
     justify-content: center;
-
-
 }
 
 .close-icon {
@@ -62,7 +58,6 @@ export default {
 
 .done-icon {
     height: 20px;
-
 }
 
 </style>

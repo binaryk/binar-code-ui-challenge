@@ -24,16 +24,15 @@ button-style {
 .button-master {
     font-weight: bold;
     font-size: 18px;
-    width: 150px;
-    height: 45px;
+    width: 180px;
+    height: 50px;
     border-radius: 10px;
-    margin: 20px;
+    margin: 60px;
     outline: 0;
 }
 
 .button-content {
     display: inline-flex;
-
 }
 
 .button-text {
@@ -42,6 +41,7 @@ button-style {
 
 .send-arrow {
     width: 25px;
+    margin: 7px;
 }
 
 </style>

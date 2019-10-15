@@ -1,6 +1,6 @@
 <template>
   <div>
-        <textarea name="help us" class="input-master" cols="10" rows="7" v-bind="$attrs" :value="value" v-on="listeners"></textarea>  
+    <textarea name="help us" class="input-master" cols="10" rows="5" v-bind="$attrs" :value="value" v-on="listeners"></textarea>  
   </div>
 </template>
 
@@ -38,7 +38,9 @@ export default {
     padding: 7px;
     border-color: white;
     margin: 10px 0;
-
+    color: white;
+    font-weight: 600;
+    font-size: 14px;
 }
 
 ::placeholder { 

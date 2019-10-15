@@ -20,7 +20,6 @@
       
     </div> 
 </template>
-
 <script>
 
 import Input from './inputs/Input.vue'
@@ -28,10 +27,8 @@ import TextArea from './inputs/TextArea.vue'
 import Button from './Button.vue'
 import Notification from './Notification.vue'
 
-
 export default {
   name: 'Login',
-  
   components: {
     Input,
     TextArea,
@@ -56,11 +53,13 @@ export default {
       this.submitted = true
       this.formData = this.initFormData()
     },
+    
     formSubmited(state) {
       this.submitted = state
     },
+
     validation() {
-      var re = /\S+@\S+\.\S+/;
+      var em = /\S+@\S+\.\S+/;
       var nu = /^-?\d*\.?\d*$/;
       this.error = {
         name: false,
@@ -70,7 +69,7 @@ export default {
       if (!this.formData.name) {
         this.error.name = true
         return false;
-      } else if (!re.test(this.formData.email)) {
+      } else if (!em.test(this.formData.email)) {
         this.error.email = true
         return false;
       }
@@ -80,6 +79,7 @@ export default {
       }
       return true;
     },
+
     initFormData() {
       return {
         name: '',
@@ -104,8 +104,8 @@ export default {
 
 .logo {
   margin-top: 100px;
-
 }
+
 h1 {
   color: white;
   font-family: 'Montserrat', sans-serif;
@@ -118,4 +118,5 @@ h1 {
   justify-content: center;
   margin: auto;
 }
+
 </style>

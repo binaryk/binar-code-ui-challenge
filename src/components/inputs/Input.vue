@@ -1,13 +1,9 @@
 <template>
   <div class="input-master">
-    <!-- <div class="input-wrapper"> -->
-      <input class="input-field" type="text" v-bind="$attrs" :value="value" v-on="listeners"> 
+      <input autocomplete="off" class="input-field" type="text" v-bind="$attrs" :value="value" v-on="listeners"> 
       <span v-if="error === true" class="error">
         {{message}}
       </span>
-    <!-- </div> -->
-    
-      
   </div>
 </template>
 
@@ -35,11 +31,11 @@ export default {
 };
 </script>
 
-
 <style scoped>
 
 .input-master {
   margin: 10px 0;
+  
   
 }
 
@@ -51,20 +47,23 @@ export default {
     width: 380px;
     margin: 10px auto;
     padding: 7px;
+    color: white;
+    font-weight: 600;
+    font-size: 14px;
 
 }
 
 ::placeholder { 
   color: white;
   opacity: 0.7; 
-
 }
 
 .error {
   font-family: 'Montserrat', sans-serif;
   float: left;
   color: white;
-  font-size: 12px;
+    font-weight: 600;
+    font-size: 13px;
 }
 
 </style>
