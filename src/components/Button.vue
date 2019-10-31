@@ -2,9 +2,13 @@
   <div class="button-style">
       <button class="button-master">
           <div class="button-content">
-              <div class="button-text">Send</div>
-              <svg data-v-04d2d661="" viewBox="0 0 32 32" saria-hidden="true" class="send-arrow"><path data-v-04d2d661="" d="M5.975 17.504l14.287.001-6.367 6.366L16.021 26l10.004-10.003L16.029 6l-2.128 2.129 6.367 6.366H5.977z"></path></svg>
-          </div>
+        
+              <slot>
+                <div class="button-text">Send</div>
+                <svg data-v-04d2d661="" viewBox="0 0 32 32" saria-hidden="true" class="send-arrow"><path data-v-04d2d661="" d="M5.975 17.504l14.287.001-6.367 6.366L16.021 26l10.004-10.003L16.029 6l-2.128 2.129 6.367 6.366H5.977z"></path></svg>
+
+              </slot> 
+             </div>
       </button>
   </div>
 </template>
@@ -15,7 +19,7 @@ export default {
 }
 </script>
 
-<style>
+<style scoped>
 
 button-style {
     font-family: 'Montserrat', sans-serif;

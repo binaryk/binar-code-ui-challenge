@@ -1,5 +1,5 @@
 <template>
-  <div v-if="submitted === true" class="notification">
+  <div class="notification">
       <div class="header">
       <h2 style="width:100%">
         <img class="done-icon" alt="touch logo" src="https://icon-library.net/images/done-icon/done-icon-16.jpg">
@@ -19,9 +19,6 @@
 <script>
 export default {
     name: 'notification',
-    props: {
-        submitted: Boolean
-    },
     methods: {
         close() {
             this.$emit('submitted', false);

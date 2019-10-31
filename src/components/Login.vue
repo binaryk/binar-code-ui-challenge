@@ -12,11 +12,13 @@
         <Input message="The email field must be a valid email" :placeholder="'Email Adress'" :id="'email'" v-model="formData.email" :error="error.email" />
         <Input message="Only numbers allowed" :placeholder="'Phone (optional)'" :id="'phone'" v-model="formData.phone" :error="error.phone" />
         <TextArea :placeholder="'How we can help'" :id="'text'" v-model="formData.text" />
-        <Button />
+        <Button>
+          dsadass
+        </Button>
       </div>
       </form>
 
-      <Notification :submitted="submitted" @submitted="formSubmited"/>
+      <Notification v-if="submitted" @submitted="submitted = false"/>
       
     </div> 
 </template>
